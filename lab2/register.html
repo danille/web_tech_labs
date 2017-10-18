@@ -6,8 +6,26 @@
 	</head>
 	<body>
 		<H1 align='center'>Sign Up or go away, please</H1>
-		<form >
-			<
+		<form autocomplete="on">
+			<input type="text" name="name" title="Please, enter your name", placeholder="Your name" autofocus="on"> Please, enter your name <br>
+			<input type="text" name="surname" title="Please, enter your surname" placeholder="Your surname"> Please, enter your surname <br>
+			<input list="months" name="month_of_birth" title="Please, choose your month of birth from the list"> Please, choose your month of birth from the list <br>
+			<datalist id="months">
+				<option value="January"></option>
+				<option value="February"></option>
+				<option value="March"></option>
+				<option value="April"></option>
+				<option value="May"></option>
+				<option value="June"></option>
+				<option value="July"></option>
+				<option value="August"></option>
+				<option value="September"></option>
+				<option value="October"></option>
+				<option value="November"></option>
+				<option value="December"></option>
+			</datalist>
+			<input type="email" name="email" title="Please, enter your email" placeholder="email@example.com" required="on"> Please, enter your email <br>
+			<input type="tel" name="telephone" pattern="^\+48\(?\d{3}\)?\d{3}\-?\d{3}" title="Please, enter your phone number"> Please, enter your phone number <br>
 		</form>
 	</body>
 </html>
