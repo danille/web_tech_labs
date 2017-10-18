@@ -8,7 +8,7 @@
 		<H1 align='center'>Sign Up or go away, please</H1>
 		<form autocomplete="on">
 			<input type="text" name="name" title="Please, enter your name", placeholder="Your name" autofocus="on"> Please, enter your name <br>
-			<input type="text" name="surname" title="Please, enter your surname" placeholder="Your surname"> Please, enter your surname <br>
+			<input type="text" name="surname" title="Please, enter your surname" placeholder="Your surname" required> Please, enter your surname <br>
 			<input list="months" name="month_of_birth" title="Please, choose your month of birth from the list"> Please, choose your month of birth from the list <br>
 			<datalist id="months">
 				<option value="January"></option>
@@ -24,8 +24,9 @@
 				<option value="November"></option>
 				<option value="December"></option>
 			</datalist>
-			<input type="email" name="email" title="Please, enter your email" placeholder="email@example.com" required="on"> Please, enter your email <br>
-			<input type="tel" name="telephone" pattern="^\+48\(?\d{3}\)?\d{3}\-?\d{3}" title="Please, enter your phone number"> Please, enter your phone number <br>
+			<input type="email" name="email" title="Please, enter your email" placeholder="email@example.com" required> Please, enter your email <br>
+			<input type="tel" name="tel" pattern="^\+48\(?\d{3}\)?\d{3}\-?\d{3}" title="Please, enter your phone number"> Please, enter your phone number <br> 
+			<input type="submit" name="submit">
 		</form>
 	</body>
 </html>
