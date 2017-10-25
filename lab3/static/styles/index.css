@@ -1,7 +1,7 @@
 h1, h3 {
 	text-align: center;
 	font-family: "Verdana";
-	font-size: 1em;
+	font-size: 3em;
 }
 
 #id-main-text {
@@ -12,4 +12,34 @@ h1, h3 {
 
 .cl-text {
 	font-size: 110%;
+}
+body {
+	background-color: black;
+	background-image: url(../lorem.png);
+	background-repeat: repeat-y;
+	background-position: center;
+	background-attachment: fixed;
+	color: white;
+	font-family: "Helvetica"
+}
+
+nav {
+	text-align: center;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+
+}
+
+a:active {
+	text-decoration: underline;
 }
