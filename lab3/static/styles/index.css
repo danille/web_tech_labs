@@ -8,6 +8,11 @@ h1, h3 {
 	text-align: center;
 	background-color: #667788;
 	font-size: 24px;
+	border-style: solid;
+	border-width: 12px;
+	border-color: green;
+	padding: 5px;
+	margin: 10px;
 }
 
 .cl-text {
