@@ -6,32 +6,51 @@ h1, h3 {
 
 #id_main_header {
 	text-shadow: 4px 4px #A8BB19;
+	background-color: rgba(250, 2, 60, 0.7);
 }
 
+.cls_article_header {
+	box-shadow: 5px 5px #B431F4;
+	padding: 0;
+}
 
 #id-main-text {
 	text-align: center;
-	background-color: #667788;
 	font-size: 24px;
 	border-style: solid;
 	border-width: 12px;
-	border-color: green;
+	border-color: #46E4BC;
 	border-radius: 25px;
 	padding: 5px;
 	margin: 10px;
+	background: red; /* For browsers that do not support gradients */
+  	background: -webkit-linear-gradient(left top, #FF24A4, yellow); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(bottom right, #FF24A4, yellow); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(bottom right, #FF24A4, yellow); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to bottom right, #FF24A4, yellow); /* Standard syntax */
 }
 
 .cl-text {
 	font-size: 110%;
+	background: red; /* For browsers that do not support gradients */
+  	background: -webkit-radial-gradient(red, #46E4BC, #CC37C2); /* Safari 5.1 to 6.0 */
+  	background: -o-radial-gradient(red, #46E4BC, #CC37C2); /* For Opera 11.6 to 12.0 */
+  	background: -moz-radial-gradient(red, #46E4BC, #CC37C2); /* For Firefox 3.6 to 15 */
+  	background: radial-gradient(red, #46E4BC, #CC37C2); /* Standard syntax */
 }
+
+footer {
+	background-color: hsla(348, 100%, 25%, 0.8);
+}
+
 body {
-	background-color: black;
-	background-image: url(../lorem.png);
+	color: white;
+	font-family: "Helvetica"
+	background-image: url('lorem.png');
 	background-repeat: repeat-y;
 	background-position: center;
 	background-attachment: fixed;
-	color: white;
-	font-family: "Helvetica"
+	background-color: black;
 }
 
 nav {
