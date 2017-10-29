@@ -4,6 +4,11 @@ h1, h3 {
 	font-size: 3em;
 }
 
+#id_main_header {
+	text-shadow: 4px 4px #A8BB19;
+}
+
+
 #id-main-text {
 	text-align: center;
 	background-color: #667788;
