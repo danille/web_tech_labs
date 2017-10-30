@@ -1,7 +1,17 @@
+@font-face {
+    font-family: Anton;
+    src: url('static/anton_regular.ttf'));
+}
+
 h1, h3 {
 	text-align: center;
-	font-family: "Verdana";
+	font-family: 'Anton', "Verdana";
 	font-size: 3em;
+}
+
+@keyframes color_change {
+    from {background-color: rgba(250, 2, 60, 0.7);}
+    to {background-color: rgba(234, 7, 80, 0.7);}
 }
 
 #id_main_header {
@@ -30,6 +40,12 @@ h1, h3 {
   	background: linear-gradient(to bottom right, #FF24A4, yellow); /* Standard syntax */
 }
 
+#id-second-text {
+	-webkit-border-image: url('https://goo.gl/MF4Y8c') 30 round; /* Safari 3.1-5 */
+    -o-border-image: url('https://goo.gl/MF4Y8c') 30 round; /* Opera 11-12.1 */
+    border-image: url('https://goo.gl/MF4Y8c') 30 round;
+}
+
 .cl-text {
 	font-size: 110%;
 	background: red; /* For browsers that do not support gradients */
@@ -44,13 +60,9 @@ footer {
 }
 
 body {
+	background-color: black;
 	color: white;
 	font-family: "Helvetica"
-	background-image: url('lorem.png');
-	background-repeat: repeat-y;
-	background-position: center;
-	background-attachment: fixed;
-	background-color: black;
 }
 
 nav {
