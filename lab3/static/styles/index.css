@@ -1,6 +1,6 @@
 @font-face {
     font-family: Anton;
-    src: url('static/anton_regular.ttf'));
+    src: url('static/anton_regular.ttf');
 }
 
 h1, h3 {
@@ -10,13 +10,34 @@ h1, h3 {
 }
 
 @keyframes color_change {
-    from {background-color: rgba(250, 2, 60, 0.7);}
-    to {background-color: rgba(234, 7, 80, 0.7);}
+    from {
+    	background-color: rgba(250, 2, 60, 0.7);
+    }
+    to {
+    	background-color: rgba(67, 68, 162, 0.7);
+    }
+}
+
+#id_game {
+	background-color: beige;
+	width: 100%;
+	text-align: center;
+}
+
+#id_bt_play_game {
+	color: tomato;
+	font-size: larger;
+	background-color: #999999;
+	padding: 5px;
+	margin: 10px;
 }
 
 #id_main_header {
 	text-shadow: 4px 4px #A8BB19;
 	background-color: rgba(250, 2, 60, 0.7);
+	animation-name: color_change;
+    animation-duration: 4s;
+    animation-iteration-count: 10;
 }
 
 .cls_article_header {
