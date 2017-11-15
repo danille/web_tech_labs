@@ -1,0 +1,21 @@
+body {
+    font-size: large;
+}
+
+#id_main_header {
+    text-align: center;
+}
+
+nav ul li {
+    margin: 3px;
+    display: inline;
+    position: relative;
+}
+
+#id_buttons {
+    text-align: center;
+}
+
+#id_buttons button {
+    font-size: larger;
+}
