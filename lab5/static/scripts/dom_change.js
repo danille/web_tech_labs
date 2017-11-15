@@ -8,10 +8,19 @@ window.onload = function () {
 
         var mainHeader = document.getElementById('id_main_header');
         mainHeader.appendChild(mainHeaderText);
-
     }
 
-    var reset_button = document.getElementById("id_bt_add_headers");
-    reset_button.addEventListener('click', addMainHeader, false)
+    function hideLinks() {
+        var links = document.getElementsByClassName("cl_nav_link");
+        for (var i = 0; i < links.length; i++){
+            links[i].style.visibility = "hidden";
+        }
+    }
+
+    var resetButton = document.getElementById("id_bt_add_headers");
+    var hideLinksButton = document.getElementById('id_bt_hide_links');
+
+    resetButton.addEventListener('click', addMainHeader, false);
+    hideLinksButton.addEventListener('click', hideLinks, false);
 };
 
