@@ -30,6 +30,16 @@ window.onload = function () {
         }
     }
 
+    function getFocus() {
+        var link = document.getElementsByClassName("cl_nav_link")[0];
+        link.focus();
+    }
+
+    function looseFocus() {
+        var link = document.getElementsByClassName("cl_nav_link")[0];
+        link.blur();
+    }
+
     function changeBackgroundColor() {
         var bgColorInput = document.getElementById('id_bg_color_input');
         document.body.style.backgroundColor = bgColorInput.value;
@@ -39,10 +49,14 @@ window.onload = function () {
     var hideLinksButton = document.getElementById('id_bt_hide_links');
     var changeHeadersFontButton = document.getElementById('id_bt_change_headers_font');
     var changeBgColorButton = document.getElementById('id_bt_change_bg_color');
+    var getFocusButton = document.getElementById('id_bt_get_focus');
+    var looseFocusButton = document.getElementById('id_bt_loose_focus');
 
     resetButton.addEventListener('click', addMainHeader, false);
     hideLinksButton.addEventListener('click', hideLinks, false);
     changeHeadersFontButton.addEventListener('click', changeHeadersFont, false);
     changeBgColorButton.addEventListener('click', changeBackgroundColor, false);
+    getFocusButton.addEventListener('click', getFocus, false);
+    looseFocusButton.addEventListener('click', looseFocus, false);
 };
 
