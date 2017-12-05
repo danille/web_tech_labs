@@ -9,11 +9,14 @@
     </body>
 </html>
 <?php
+session_start();
 
 $user_name = $_POST["name"];
 $user_surname = $_POST["surname"];
 setcookie("user_name", $user_name, time() + 3600);
 setcookie("user_surname", $user_surname, time() + 3600);
+$_SESSION['user_name'] = $user_name;
+$_SESSION['user_surname'] = $user_surname;
 
 function print_all_POST_vars()
 {
@@ -54,6 +57,8 @@ echo "Do you think your telephone number is valid?" . "<br>";
 if (validate_telephone_number($_POST['tel'])) {
     echo 'It looks like it\'s valid ';
 } else {
-    echo 'Ooops! Your telephone number is not valid!' . '<br>';
+    echo 'Ooops! Your telephone number is not valid!' . '<br><br><br>';
 }
+
+print_r($_SESSION);
 ?>

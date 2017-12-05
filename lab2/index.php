@@ -1,3 +1,12 @@
+<?php
+session_start();
+print_r($_GET);
+
+if(isset($_GET['logout'])) {
+    session_unset();
+    session_destroy();
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +22,7 @@
                 $user_surname = $_COOKIE["user_surname"];
                 echo "Nice to meet you again ".$user_name." ".$user_surname;
             } else {
-                echo "It seems to me, we hadn't met before. Don't you want to <a href='register.html'>sign up</a>?";
+                echo "It seems to me, we hadn't met before. Don't you want to <a href='register.php'>sign up</a>?";
             }
         ?>
     </h3>
@@ -22,8 +31,13 @@
         <a href="index.php">Main</a>
         <a href="https://www.lipsum.com">Lorem Ipsum Website</a>
         <a href="https://www.facebook.com">Facebook</a>
-        <a href="register.html">Register</a>
+        <a href="register.php">Register</a>
     </nav>
+    <?php
+        if (isset($_SESSION['user_name'])) {
+            echo "<a href='?logout'>Logout</a>";
+        }
+    ?>
 </header>
 
 <aside>
